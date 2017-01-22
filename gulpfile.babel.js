@@ -39,7 +39,7 @@ const reload = browserSync.reload;
 
 // Lint JavaScript
 gulp.task('lint', () =>
-    gulp.src(['app/scripts/**/*.js', '!node_modules/**'])
+    gulp.src(['app/scripts/**/*.js', '!node_modules/**', '!app/scripts/pace.js'])
     .pipe($.eslint())
     .pipe($.eslint.format())
     .pipe($.if(!browserSync.active, $.eslint.failAfterError()))
@@ -110,8 +110,9 @@ gulp.task('scripts', () =>
         // Note: Since we are not using useref in the scripts build pipeline,
         //       you need to explicitly list your scripts here in the right order
         //       to be correctly concatenated
-        './app/scripts/main.js'
+        './app/scripts/main.js',
         // Other scripts
+        './app/scripts/pace.js'
     ])
     .pipe($.newer('.tmp/scripts'))
     .pipe($.sourcemaps.init())

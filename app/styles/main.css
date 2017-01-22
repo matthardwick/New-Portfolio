@@ -2,14 +2,89 @@ html,
 body {
     width: 100%;
     height: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    color: #4c4c65
+}
+
+p {
+    color: #4c4c65;
 }
 
 #home {
     width: 100%;
     height: 100%;
     background-image: url(/images/bg.png);
-    position: relative;
-    min-height: 804px;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-top {
+    height: 50%;
+    min-height: 50%;
+    width: 100%;
+}
+
+.home-bottom {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.intro {
+    padding: 2em 4em;
+}
+
+.hello {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    font-size: 1.25em;
+    color: rgba(96, 96, 134, .75);
+}
+
+.headline {
+    font-size: 1.5em;
+    line-height: 1.65;
+    margin: 0;
+    color: #4c4c65;
+}
+
+.home-links {
+    font-family: 'Rubik', sans-serif;
+    margin-top: 1.25em;
+    margin-bottom: 0;
+    color: rgba(96, 96, 134, .75);
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+}
+
+.home-links a,
+li {
+    display: inline-block;
+    margin-bottom: .25rem;
+}
+
+.home-links li {
+    margin-right: 1.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.home-links a {
+    font-family: 'Lora', serif;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #4c4c65;
+    margin-left: .3rem;
 }
 
 #about {
@@ -46,7 +121,7 @@ body {
 .about-pic {
     width: 100%;
     margin: 0 0 1em 0;
-    background-image: url(/images/matt-profile-pic.jpg);
+    background-image: url(/images/matt-profile-pic-adjusted.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 50%;
@@ -59,4 +134,39 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     margin: 0;
+}
+
+
+/*TODO: media queries*/
+
+@media screen and (min-width: 700px) {
+    .hello {
+        font-family: 'Rubik', sans-serif;
+        margin: 0;
+        font-size: 1.75em;
+        color: rgba(96, 96, 134, .75);
+    }
+    .headline {
+        font-size: 3em;
+        line-height: 1.65;
+        margin: 0;
+        color: #4c4c65;
+    }
+    .home-links a,
+    li {
+        display: inline-block;
+        margin-bottom: .25rem;
+    }
+    .home-links li {
+        margin-right: 1.5rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .home-links a {
+        font-family: 'Lora', serif;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #4c4c65;
+        margin-left: .3rem;
+    }
 }
