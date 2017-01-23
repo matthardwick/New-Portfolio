@@ -175,11 +175,26 @@ li {
     background: #EBEBEB;
     height: 500px;
     text-align: center;
-    padding-top: 2rem;
 }
 
-.portfolio-intro h1 {
-    margin: 0 1.5rem;
+.portfolio-intro {
+    padding: 2rem;
+}
+
+.portfolio-intro h2 {
+    margin: 0;
+}
+
+.portfolio-content {
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.portfolio-list {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
