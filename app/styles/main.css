@@ -3,13 +3,19 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Rubik', sans-serif;
+    line-height: 2rem;
 }
 
 h1,
 h2,
 h3 {
     font-family: 'Lora', serif;
-    color: #4c4c65
+    color: #1A1A27;
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    color: #712426;
 }
 
 p {
@@ -39,8 +45,12 @@ p {
     justify-content: flex-end;
 }
 
+.placeholder {
+    width: 100%;
+}
+
 .intro {
-    padding: 2em 4em;
+    padding: 2em 2em;
 }
 
 .hello {
@@ -51,7 +61,7 @@ p {
 }
 
 .headline {
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.65;
     margin: 0;
     color: #4c4c65;
@@ -119,9 +129,8 @@ li {
 }
 
 .about-pic {
-    width: 100%;
     margin: 0 0 1em 0;
-    background-image: url(/images/matt-profile-pic-adjusted.jpg);
+    background-image: url(/images/matt-profile-pic.png);
     background-position: center;
     background-size: cover;
     border-radius: 50%;
@@ -134,6 +143,43 @@ li {
     padding-left: 20px;
     padding-right: 20px;
     margin: 0;
+}
+
+.button {
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    width: 100%;
+    margin: .5rem 0;
+    background: #797979;
+    color: #222;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    border: none;
+}
+
+.resume-button {
+    background: #1A1A27;
+    color: #fff;
+}
+
+#portfolio {
+    width: 100%;
+    background: #EBEBEB;
+    height: 500px;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.portfolio-intro h1 {
+    margin: 0 1.5rem;
 }
 
 
@@ -168,5 +214,39 @@ li {
         text-decoration: none;
         color: #4c4c65;
         margin-left: .3rem;
+    }
+    .intro {
+        padding: 2em 4em;
+    }
+    .button {
+        width: auto;
+        padding: 0 1.5rem;
+        margin-right: .5rem;
+    }
+    .about-inner {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .about-info {
+        order: 1;
+        flex-grow: 2;
+        flex-shrink: 2;
+    }
+    .about-pic-wrapper {
+        order: 2;
+        align-self: flex-end;
+        margin: auto 2rem;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+    .about-pic {
+        width: 17.5rem;
+        height: 17.5rem;
+    }
+    .portfolio-intro h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        margin: 0 2rem;
     }
 }
