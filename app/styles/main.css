@@ -21,12 +21,14 @@ h3 {
     color: #fff;
     text-rendering: optimizeLegibility;
     margin: 0;
-    margin-bottom: 2rem;
 }
 
 h2 {
     font-family: 'Rubik', sans-serif;
     color: #712426;
+    margin-bottom: .5rem;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
 }
 
 p {
@@ -75,6 +77,7 @@ header .mh-logo a {
     -moz-background-size: cover;
     background-size: cover;
     position: relative;
+    min-height: 702px;
 }
 
 .overlay {
@@ -100,13 +103,14 @@ header .mh-logo a {
 .home-content {
     width: 100%;
     height: 100%;
-    min-height: 654px;
     display: table;
     position: relative;
+    min-height: 702px;
 }
 
 .intro {
     height: 100%;
+    width: 100%;
     vertical-align: middle;
     display: table-cell;
     padding: 4rem 2.5rem 2.5rem 2.5rem;
@@ -126,7 +130,7 @@ header .mh-logo a {
 }
 
 .headline h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .home-links {
@@ -209,11 +213,21 @@ li {
     padding-left: 20px;
     padding-right: 20px;
     margin: 0;
+    text-align: center;
+}
+
+.about-info p {
+    text-align: left;
 }
 
 .about-info h1,
 h3 {
     color: #1A1A27;
+    margin-bottom: .75rem;
+}
+
+.about-info h2 {
+    letter-spacing: .15rem;
 }
 
 .button {
@@ -250,7 +264,7 @@ h3 {
 
 .portfolio-intro {
     padding: 0 1.5rem 0 1.5rem;
-    margin-bottom: .5rem;
+    margin-bottom: .75rem;
 }
 
 .portfolio-intro h1 {
@@ -258,7 +272,7 @@ h3 {
 }
 
 .portfolio-intro h2 {
-    margin: 0;
+    letter-spacing: .15rem;
 }
 
 .portfolio-content {
@@ -272,6 +286,11 @@ h3 {
     color: #712426;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    font-size: 1.75rem;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+    text-align: left;
+    letter-spacing: .05rem;
+    line-height: 1.75rem;
 }
 
 .portfolio-list {
@@ -307,8 +326,303 @@ h3 {
     position: relative;
 }
 
+.portfolio-description a {
+    color: #A35213;
+    text-decoration: none;
+    font-family: 'Lora', sans-serif;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.portfolio-description h3 {
+    margin: .75rem 0;
+    line-height: 1.75rem;
+    font-size: 1.25rem;
+}
+
+.portfolio-description-list {
+    padding-left: .75rem;
+    font-family: 'Lora', sans-serif;
+    list-style: disc;
+}
+
+.portfolio-description-list li {
+    line-height: 1.5rem;
+    margin: 1rem 0;
+    font-size: 1.05rem;
+    color: #1a1a27;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+
 .mu-blog-screenshot {
     background-image: url(/images/portfolio/mu-blog-screenshot.png);
+}
+
+.maps-screenshot {
+    background-image: url(/images/portfolio/maps-screenshot.png);
+}
+
+.wtgg-screenshot {
+    background-image: url(/images/portfolio/wtgg-screenshot.png);
+}
+
+#skills {
+    background-image: url(/images/skills-bg.png);
+    background-repeat: repeat;
+    background-position: center;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.skills-intro {
+    text-align: center;
+    padding: 0 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.skills-intro h1 {
+    margin-bottom: 1.25rem;
+    line-height: 3rem;
+    font-size: 2.5rem;
+}
+
+.skills-intro h2 {
+    letter-spacing: .15rem;
+}
+
+.skills-intro h3 {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.skills-content {
+    padding: 0 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.skills-list {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.skills-list {
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-wrap: normal;
+    color: #fff;
+    letter-spacing: .07rem;
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+}
+
+.skills-list img {
+    height: 5rem;
+    width: auto;
+    padding-bottom: .5rem;
+}
+
+.skills-list figcaption {
+    color: #fff;
+    letter-spacing: .07rem;
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+}
+
+#history {
+    width: 100%;
+    background: #f4f4f4;
+    padding: 2rem 0;
+}
+
+.history-intro {
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.history-intro h1 {
+    color: #1a1a27;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2.5rem;
+}
+
+#history h2 {
+    text-align: center;
+}
+
+.history-content {
+    padding: 0 1.5rem;
+}
+
+.history-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+
+.timeline-wrap {
+    position: relative;
+    text-align: left;
+}
+
+.timeline-wrap::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 2rem;
+    top: 0;
+}
+
+.timeline-entry {
+    padding-left: 5rem;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.timeline-icon {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    background: #162041;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    left: 2rem;
+    top: 0;
+    margin-left: -1.5rem;
+}
+
+.timeline-content p,
+h3,
+h4 {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    margin-bottom: .25rem;
+    line-height: 1.25;
+}
+
+.timeline-content p {
+    font-weight: bold;
+    opacity: .75;
+}
+
+.timeline-content h3 {
+    font-size: 2rem;
+}
+
+.timeline-content h4 {
+    font-size: 1.25rem;
+}
+
+.fa-building {
+    margin-left: 2px;
+}
+
+#contact {
+    background-color: #fff;
+    background-image: url(/images/contact-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    padding-top: 10.2rem;
+    padding-bottom: 6rem;
+    position: relative;
+    text-align: center;
+}
+
+.contact-intro {
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.contact-intro h1 {
+    color: #fff;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-intro h3 {
+    font-family: Rubik, sans-serif;
+    margin: 0;
+    color: #fff;
+    margin-bottom: .25rem;
+    line-height: 1.75;
+}
+
+.contact-content {
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.contact-content h2 {
+    font-size: 1.25rem;
+    color: #fff;
+    letter-spacing: .15rem;
+}
+
+.contact-content a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #c5494d;
+    letter-spacing: .05rem;
+    padding: 15px;
+}
+
+footer {
+    width: 100%;
+    background: #0d0d13;
+    padding: 1.5rem 0;
+}
+
+.footer-links {
+    margin: 0;
+    padding: 0 1.5em;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.footer-links li {
+    padding: 15px;
+}
+
+.footer-links i {
+    color: #8b94a7;
+}
+
+.copyright p {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: .8rem;
 }
 
 
